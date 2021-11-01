@@ -1,0 +1,33 @@
+
+{% extends "tomperrus/layout.html" %}
+{% load static %}
+{% block body %}
+<main>
+        <aside  class="description container-fluid" id = "sobre">
+
+	    <h1> Sobre a TomPerrus </h1>
+	    <p class="texto"> 
+            A empresa Tomperrus foi criada em 2021 em Aracati-CE com o intuito de oferecer produtos do gênero alimentício
+            de forma caseira e com os melhores "tomperrus" para você consumir em variadas ocasiões, 
+            como um simples lanche, um petisco, um almoço em família além de produtos voltado para churrascos.
+        </p>
+	    </aside>
+        <article class="container-fluid">
+            <h1>Produtos</h1>
+            <ul class="list-inline">
+                {% for product in products %}
+                <a id="product.id" href="{% url 'products' product.Name %}">
+                    <li class="list-inline-item"> 
+                            <img src="{{product.ImageFile.url}}"  class="img-fluid img-thumbnail">
+                            <h2>{{product.Name}}</h2>
+                            <h3>{{product.Price|floatformat:2 }} R$</h3>
+                    </li>
+                </a>
+                {% endfor %}
+            </ul>
+            <!--<div><input class="btn btn-primary" type="button" value="Back" id="back">
+                <input class="btn btn-primary" type="button" value="Next" id="forward">
+            </div> -->
+        </article>
+    </main>
+{% endblock %}

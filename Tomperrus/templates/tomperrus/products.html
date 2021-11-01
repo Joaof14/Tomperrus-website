@@ -1,0 +1,43 @@
+{% extends "tomperrus/layout.html" %}
+{% load static %}
+{% block body %}
+<main>
+    <aside class="description container-fluid">
+        <h4>{{product.Description}}</h4>
+        <h2> Ingrendientes: </h2>
+        <div class="rotulo">
+            {%for flavour in flavours %}
+            <p>
+                {{flavour.Ingredients}}
+            </p>
+            {%endfor%}
+        </div>
+        <h2> Validade: </h2>
+        <p>
+            {{product.Validade}}
+        </p>
+    </aside>
+   <section>
+       <article id ="produto" class="container-fluid">
+                <img src="{{product.ImageFile1.url}}" >
+                <div>
+                    <h1>{{product.Name}}</h1> 
+                    <h1>Preço: {{product.Price|floatformat:2 }} R$</h1>
+                    <h2> Contato para encomenda: <a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5588997298216&e=ATNK5Bfk_zM5rYK-m-7fHVWlQObK4SxyW0kzzQsB7WY4-b7iZ54c_Z_E6BMO_ba336A0TI0iasiRIItq_XsRZw&s=1">
+                        📱(88) 99729-8216</a> 
+                    </h2>
+                    <label>Escolha o sabor e veja as informações!</label>
+                    <select class="form-select" id="sabores"> 
+                        {%for flavour in flavours%}
+                        <option value="flavour.Color" name="flavour.Flavour1">
+                            {{flavour.Flavour1}}
+                        </option>
+                        {%endfor%}
+                    </select>
+            </div>
+        </article>
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,147 @@
+* {
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+main{
+    display: flex;
+    max-height: 96%;
+}
+body{
+    margin: 0 0 0 0;
+    height: 100%;
+}
+
+header{
+    background-color: black;
+    position: relative;
+    height: 12%;
+}
+a #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 12%;
+    width: 15%;
+    padding: 0.5%;
+}
+#Nav, #Nav .container-fluid{
+    background-color: black;
+    position: relative;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+#Nav .navbar-nav{
+    justify-content: space-around;
+    width: 100%;
+}
+#Nav .nav-link{color: white;}
+#Nav .nav-link:hover{color:rgb(11, 109, 11);}
+.description {
+    background-color: rgb(11, 109, 11);
+    min-width: 20%;
+    max-width: 25%;
+    max-height: 80%;
+    float: left;
+    color: white;
+}
+li h2, li h3
+{
+    text-align: center;
+}
+h1, h2, h3{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 3%;
+}
+.description h1, .description h2, .description p, .description h4{
+    justify-content: center;
+    display: flex;
+    padding-top: 5%; padding-bottom:0%;
+    margin-top: 0%; margin-bottom: 0%;
+    text-align: center;
+}
+.texto{
+    font-size: 1.75vw;
+}
+article { 
+    min-width: 75%;
+    float: left;
+    position: relative;
+    margin: none;
+}
+article ul
+{
+    justify-content: space-between;
+    display: inline-flex;
+    margin: auto;
+    order: 2;
+}
+article img{
+    width: 100%;
+    display: flex;
+}
+article a
+{
+    justify-content: center;
+    position: relative;
+    display: flex;
+    border: #008000 1px solid;
+    margin-top: 0%;
+    margin-bottom:1vw;
+    text-decoration: none;
+    color: black;
+}
+#produto div{
+    float: left;
+    margin: 7.5% 0% 0% 5%;
+}
+#produto{
+    height: auto;
+    margin: 0;
+    min-width: 100%;
+    float: left;
+    display: flex;
+    border: 1px solid green;
+    height: fit-content;}
+#produto img {
+    min-width:40%;
+    max-width: 55%;
+    display: inline-flex;
+    margin: 5%;
+    max-height: 60%;
+}
+div h1, div h2
+{
+    justify-content: center;
+    display: block;
+    padding-bottom: 5%;
+}
+article a:hover
+{
+    background-color: lightgray;
+    color: black;
+}
+
+article div {
+    width: 20%;
+    margin: 0% 40%;
+    padding: none;
+    position: relative;
+    margin-bottom: 3vw;
+}
+    h4{font-size: 2.0vw;}
+    .description p{font-size: 1.5vw;}
+footer{
+    padding-top: 0.5vw;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background: black;
+    color: white;
+    justify-content: space-around;
+}
