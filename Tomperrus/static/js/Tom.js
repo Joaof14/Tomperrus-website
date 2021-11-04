@@ -8,13 +8,10 @@ document.addEventListener("DOMContentLoaded", function()
     var slide = document.getElementById("slideInicial").children;
     var forward = document.getElementById("forward");
     var back = document.getElementById("back");
+    back.style.display= "none";
+    forward.style.display = "none";
     console.log(slide[1]);
-    if (slide.length <= 3)
-    {
-        back.style.display= "none";
-        forward.style.display = "none";
-    }
-    else
+    if (slide.length >= 3)
     {
         for(let j = 3; j < slide.length; j++)
         {
