@@ -72,6 +72,21 @@
     position: relative;
     justify-content: center;
     }
+    .buttons{
+        position: relative;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 4;
+    }
+    button{
+        margin:0% 0% 1% 1%;
+        background-color: green;
+        color: white;
+        font-size: 2vw;
+        width: 15vw;
+    }
     #produto {flex-wrap: wrap;}
     #produto div {width: 100%; margin: 0%;}
     h1{font-size: 5vw;}
@@ -98,6 +113,21 @@
     margin: 5% 20% 2% 20% ;
     position: relative;
     justify-content: center;
+    }
+    .buttons{
+        position: relative;
+        margin: 0% auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 4;
+    }
+    button{
+        margin:0% 0% 1% 1%;
+        background-color: green;
+        color: white;
+        font-size: 2vw;
+        width: 15vw;
     }
     #produto {flex-wrap: wrap;}
     #produto div {width: 100%; margin: 0%;}
