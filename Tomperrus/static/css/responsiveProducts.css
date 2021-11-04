@@ -1,0 +1,34 @@
+@media (max-width: 992px){
+    #produto img {min-width: 50%;}
+    #produto {flex-wrap: nowrap;}
+}
+@media (max-width: 800px)
+{
+    #produto img 
+    { height: 35%;
+    width: 60%; 
+    padding: 0%;
+    margin: 5% 20% 2% 20% ;
+    position: relative;
+    justify-content: center;
+    }
+    #produto {flex-wrap: wrap;}
+    #produto div {width: 100%; margin: 0%;}
+    label {font-size: 4vw;}
+    #sabores {height: 10vw;}
+}
+@media (min-width:1500px){
+    label {font-size: 4vw;}
+    #produto {flex-wrap: wrap;}
+    #produto div {
+        width: 100%; 
+        margin: 0%;}
+    #produto img 
+    { height: 35%;
+    width: 60%; 
+    padding: 0%;
+    margin: 5% 20% 2% 20% ;
+    position: relative;
+    justify-content: center;
+    }
+}

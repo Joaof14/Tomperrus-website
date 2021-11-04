@@ -1,4 +1,7 @@
 
 @import url(bootstrap.min.css);
-@import url(custom.css);
-@import url(responsive.css);
+@import url(customIndex.css);
+@import url(responsiveIndex.css);
+@import url(customProducts.css);
+@import url(responsiveProducts.css);
+

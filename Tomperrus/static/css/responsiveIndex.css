@@ -32,10 +32,6 @@
         margin-left: auto;
         margin-right: auto;
     }
-    #produto img {
-        min-width: 50%;
-    }
-    #produto {flex-wrap: nowrap;}
     article {order: 1; flex-wrap: wrap;}
     article ul
     {
@@ -64,14 +60,7 @@
 }
 
 @media (max-width: 800px){
-    #produto img 
-    { height: 35%;
-    width: 60%; 
-    padding: 0%;
-    margin: 5% 20% 2% 20% ;
-    position: relative;
-    justify-content: center;
-    }
+   
     .buttons{
         position: relative;
         margin: 0% auto;
@@ -87,33 +76,22 @@
         font-size: 2vw;
         width: 15vw;
     }
-    #produto {flex-wrap: wrap;}
-    #produto div {width: 100%; margin: 0%;}
     h1{font-size: 5vw;}
     h2, #sabores{font-size: 4vw;}
-    label, .nav-item{font-size: 4vw;}
+    .nav-item{font-size: 4vw;}
     h4{font-size: 3.5vw;}
     .description p{font-size: 3vw;}
     footer p, #sobre p{font-size: 2.5vw;}
-    #sabores {height: 10vw;}
 }
 @media (min-width:1500px) {
     h1{font-size: 5vw;}
     h2, #sabores{font-size: 4vw;}
-    label, .nav-item{font-size: 4vw;}
+    .nav-item{font-size: 4vw;}
     #sobre p, .description p {font-size: 2vw;}
     footer p {font-size: 1.5vw;}
     h4{font-size: 3.5vw;}
     h4, .description h2, .description p {margin-bottom: 1vw;}
     #sabores{height: 6vw;}
-    #produto img 
-    { height: 35%;
-    width: 60%; 
-    padding: 0%;
-    margin: 5% 20% 2% 20% ;
-    position: relative;
-    justify-content: center;
-    }
     .buttons{
         position: relative;
         margin: 0% auto;
@@ -129,6 +107,4 @@
         font-size: 2vw;
         width: 15vw;
     }
-    #produto {flex-wrap: wrap;}
-    #produto div {width: 100%; margin: 0%;}
 }
