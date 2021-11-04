@@ -5,6 +5,22 @@ var color;
 console.log("funcionou");
 document.addEventListener("DOMContentLoaded", function()
 {
+    var slide = document.getElementById("slideInicial").children;
+    var forward = document.getElementById("forward");
+    var back = document.getElementById("back");
+    console.log(slide[1]);
+    if (slide.length <= 3)
+    {
+        back.style.display= "none";
+        forward.style.display = "none";
+    }
+    else
+    {
+        for(let j = 3; j < slide.length; j++)
+        {
+            slide[j].style.display = "none";
+        }
+    }
     aside = document.querySelector('aside');
     flavours = document.querySelector('select');
     rotulo = document.querySelector('.rotulo').children;

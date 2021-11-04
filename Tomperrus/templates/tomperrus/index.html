@@ -14,7 +14,7 @@
 	    </aside>
         <article class="container-fluid">
             <h1>Produtos</h1>
-            <ul class="list-inline">
+            <ul class="list-inline" id="slideInicial">
                 {% for product in products %}
                 <a id="product.id" href="{% url 'products' product.Name %}">
                     <li class="list-inline-item"> 
@@ -26,8 +26,8 @@
                 {% endfor %}
             </ul>
                 <div class="buttons container-fluid">
-                    <button class="btn-responsive"> Anterior </button>
-                    <button class="btn-responsive"> Próximo </button>    
+                    <button class="btn-responsive" id="back"> Anterior </button>
+                    <button class="btn-responsive" id="forward"> Próximo </button>    
                 </div>
             <!--<div><input class="btn btn-primary" type="button" value="Back" id="back">
                 <input class="btn btn-primary" type="button" value="Next" id="forward">
