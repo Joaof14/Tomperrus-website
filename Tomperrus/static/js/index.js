@@ -13,4 +13,4 @@ document.addEventListener("DOMContentLoaded", function()
             slide[j].style.display = "none";
         }
     }
-}
+})
