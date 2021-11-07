@@ -19,7 +19,14 @@
     </aside>
    <section>
        <article id ="produto" class="container-fluid">
-                <img src="{{product.ImageFile1.url}}">
+           <div id = "img">
+               <img src="{{product.ImageFile1.url}}">
+               <div class="buttons container-fluid">
+                <button class="btn-responsive" id="back"> Anterior </button>
+                <button class="btn-responsive" id="forward"> Próximo </button>    
+            </div> 
+            </div>
+                
                 <div>
                     <h1>{{product.Name}}</h1> 
                     <h1>Preço: {{product.Price|floatformat:2 }} R$</h1>
