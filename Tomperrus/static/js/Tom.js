@@ -32,4 +32,20 @@ document.addEventListener("DOMContentLoaded", function()
             }
         }
     })
+    var slide = document.querySelectorAll(".ProductImg");
+    var forward = document.getElementById("forward");
+    var back = document.getElementById("back");
+    console.log(slide[0]);
+    if (slide.length > 1)
+    {
+        for(let j = 1; j < slide.length; j++)
+        {
+            slide[j].style.display = "none";
+        }
+    }
+    else
+    {
+        back.style.display= "none";
+        forward.style.display = "none";
+    }
 })

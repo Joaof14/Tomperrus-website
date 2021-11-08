@@ -10,10 +10,10 @@ def index(request):
 def products(request, Product_Name):
     product = Product.objects.get(Name = Product_Name)
     flavours = Flavour.objects.filter(ProductN = product)
-    image = Image.objects.filter(ProductN = product)
+    images = Image.objects.filter(ProductN = product)
     return render(request, "tomperrus/products.html", {
     "product": product,
     "flavours": flavours,
-    "image": image
+    "images": images
     })
    
