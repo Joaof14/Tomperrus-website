@@ -1,7 +1,5 @@
-
-#produto div{
-    float: left;
-    margin: 7.5% 0% 0% 5%;
+#ProductInfo{
+    margin: 5% 0% 0% 5%;
 }
 #produto{
     height: auto;
@@ -17,19 +15,17 @@
     display: flex;
     position: relative;
     justify-content: center;
-    margin: auto;
+    margin-bottom: 5%;
     order: 1;
     }
 #produto #img{
     margin: 5% 0%;
     min-width: 70%;
-    height: fit-content;
-    border: 1px solid green;
+    height: 90%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
-#buttons{
-    border: 1px solid green;
-    width: 100%;
+.buttons{
+    margin-bottom: 2%;
 }
-
