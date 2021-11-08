@@ -1,5 +1,4 @@
-#produto .buttons
-{order: 2;}
+
 #produto div{
     float: left;
     margin: 7.5% 0% 0% 5%;
@@ -11,14 +10,26 @@
     float: left;
     display: flex;
     height: fit-content;}
-#produto img {
-    min-width:40%;
-    max-width: 70%;
-    display: inline-flex;
-    max-height: 70%;
-}
+    #produto img 
+    { height: 35%;
+    width: 60%; 
+    padding: 0%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    order: 1;
+    }
 #produto #img{
     margin: 5% 0%;
-width: 50%;
-height: fit-content;
-border: 1px solid green;}
+    min-width: 70%;
+    height: fit-content;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+}
+#buttons{
+    border: 1px solid green;
+    width: 100%;
+}
+
