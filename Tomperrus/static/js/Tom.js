@@ -42,6 +42,27 @@ document.addEventListener("DOMContentLoaded", function()
         {
             slide[j].style.display = "none";
         }
+        var counter = 0;
+        back.addEventListener("click", function()
+        {
+            slide[counter].style.display = "none";
+            counter--;
+            if(counter<0)
+            {
+                counter = slide.length - 1;
+            }
+            slide[counter].style.display = "flex";
+        })
+        forward.addEventListener("click", function()
+        {
+            slide[counter].style.display = "none";
+            counter++;
+            if(counter == slide.length)
+            {
+                counter = 0;
+            }
+            slide[counter].style.display = "flex";
+        })
     }
     else
     {
