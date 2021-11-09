@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'webTomperrus.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'TomperrusDB',
+        'USER': 'Joaof14',
+        'PASSWORD': 'jp123fernandes',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
