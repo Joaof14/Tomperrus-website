@@ -1,22 +1,4 @@
 @media (max-width: 992px) { 
-    * {
-        text-decoration: none;
-        list-style-type: none;
-        margin: 0;
-        box-sizing: border-box;
-        position: relative;
-    }
-    main {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    .container-fluid .navbar-nav, .navbar-nav .nav-item
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
     article, .description{
         display: flex;
         width: 100vw;
@@ -41,7 +23,6 @@
     margin: auto;
     order: 1;
     }
-   footer {padding-top: 1vw;}
     .description {
         order: 2;
         flex-direction: column;
@@ -81,14 +62,12 @@
     .nav-item{font-size: 4vw;}
     h4{font-size: 3.5vw;}
     .description p{font-size: 3vw;}
-    footer p, #sobre p{font-size: 2.5vw;}
+    #sobre p{font-size: 2.5vw;}
 }
 @media (min-width:1500px) {
     h1{font-size: 5vw;}
     h2, #sabores{font-size: 4vw;}
-    .nav-item{font-size: 4vw;}
     #sobre p, .description p {font-size: 2vw;}
-    footer p {font-size: 1.5vw;}
     h4{font-size: 3.5vw;}
     h4, .description h2, .description p {margin-bottom: 1vw;}
     #sabores{height: 6vw;}

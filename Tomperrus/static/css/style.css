@@ -1,5 +1,8 @@
 @import url(bootstrap.min.css);
+@import url(customLayout.css);
+@import url(responsiveLayout.css);
 @import url(customIndex.css);
 @import url(responsiveIndex.css);
 @import url(customProducts.css);
 @import url(responsiveProducts.css);
+
