@@ -16,6 +16,6 @@ class ProductTestCase(TestCase):
        # self.assertEqual(response.context["product"].count(), 3)
     def test_valid_product_page(self):
         c = Client()
-        p = Product.objects.get(Name="produto")
-        response = c.get(f"/{p.Name}")
-        self.assertEqual(response.status_code, 200)
+        for p in Product.objects.all():
+            response = c.get(f"/{p.Name}")
+            self.assertEqual(response.status_code, 200)
