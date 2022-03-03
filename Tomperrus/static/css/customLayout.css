@@ -43,9 +43,9 @@ a #logo {
 footer{
     padding-top: 0.5vw;
     display: flex;
-    position: absolute;
     width: 100%;
     background: black;
     color: white;
     justify-content: space-around;
+    bottom: 0;
 }
