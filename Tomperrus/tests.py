@@ -1,4 +1,5 @@
 from django.http import response
+from django.shortcuts import redirect
 from django.test import Client, TestCase, client
 from Tomperrus.views import products
 from .models import Product, Flavour, Image
@@ -22,3 +23,4 @@ class ProductTestCase(TestCase):
         for p in Product.objects.all():
             response = c.get(f"/{p.Name}")
             self.assertEqual(response.status_code, 200)
+
