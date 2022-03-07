@@ -13,6 +13,11 @@
         </p>
 	    </aside>
         <article class="container-fluid">
+            {%if error %}
+            <h1 class="alert alert-warning" role="alert">
+                {{error}}
+            </h1>
+            {% else %}
             <h1>Produtos</h1>
             <ul class="list-inline" id="slideInicial">
                 {% for product in products %}
@@ -29,5 +34,6 @@
                     <button class="btn-responsive" id="back"> Anterior </button>
                     <button class="btn-responsive" id="forward"> Próximo </button>    
                 </div>
+                {%endif %}
         </article>
 {% endblock %}
