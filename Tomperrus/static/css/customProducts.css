@@ -1,13 +1,24 @@
 #ProductInfo{
     margin: 5% 0% 0% 5%;
+    order: 2;
 }
+#ProductFlavour{
+    order: 3;
+    float: left;
+    margin: 0;
+    display: flex;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
 #produto{
     height: auto;
     margin: 0;
     min-width: 100%;
-    float: left;
+    justify-content: center;
     display: flex;
-    height: fit-content;}
+    height: fit-content;
+    flex-wrap: wrap;}
     #produto img 
     { height: 35%;
     width: 60%; 
@@ -15,7 +26,7 @@
     display: flex;
     position: relative;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     order: 1;
     }
 #produto #img{
