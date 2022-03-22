@@ -1,6 +1,9 @@
 @media (max-width: 992px){
     #produto img {min-width: 50%;}
     #produto {flex-wrap: nowrap;}
+    #ProductFlavour{
+        width: 100%;
+    }
 }
 @media (max-width: 800px)
 {
